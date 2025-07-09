@@ -1,0 +1,1 @@
+{"v":5,"entries":{"example-permissiontree--default":{"type":"story","id":"example-permissiontree--default","name":"Default","title":"Example/PermissionTree","importPath":"./src/PermissionTree.stories.tsx","componentPath":"./src/components/PermissionTree.tsx","tags":["dev","test"]}}}
