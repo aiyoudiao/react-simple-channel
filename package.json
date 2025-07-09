@@ -13,7 +13,6 @@
     "react-toolkit",
     "channel-toolkit",
     "channel",
-    "localstorage",
     "hooks"
   ],
   "license": "MIT",

@@ -3,6 +3,7 @@
 
 [English 🇺🇸](./README.md)
 
+> DeepWiki 知识库文档 -> [react-simple-channel](https://deepwiki.com/aiyoudiao/react-simple-channel)  
 > 一个轻量的 React 多标签页通信工具，支持传统函数和 Hook 两种方式。
 
 

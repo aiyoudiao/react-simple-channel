@@ -2,6 +2,7 @@
 
 [中文 🇨🇳](./README.zh-CN.md)
 
+> DeepWiki Knowledge Base Document -> [react-simple-channel](https://deepwiki.com/aiyoudiao/react-simple-channel)  
 > A lightweight React communication tool for multiple browser tabs, supporting both traditional functions and Hooks.
 
 ![npm](https://img.shields.io/npm/v/react-simple-channel?color=blue)
