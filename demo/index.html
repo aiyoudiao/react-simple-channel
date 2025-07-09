@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BroadcastSync Test</title>
+
+    <script type="module">
+      import { BroadcastSync } from "@/toolkit/BroadcastSync.ts";
+
+      const tabId =
+        new URLSearchParams(location.search).get("tab") ?? "default";
+      const logEl = document.createElement("pre");
+      document.body.append(logEl);
+
+      const log = (msg) => {
+        console.log(msg);
+        logEl.textContent += msg + "\n";
+        window.lastLog = msg;
+      };
+
+      const sync = BroadcastSync.query("test-channel");
+      sync.addEventListener((data, fromRemote) => {
+        log(`[${tabId}] received: ${data}, remote: ${fromRemote}`);
+        window.lastReceived = { data, fromRemote };
+      });
+
+      window.sendMessage = (msg) => {
+        sync.post(msg);
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <h2>BroadcastSync Test</h2>
+    </div>
+    <script type="module" src="/App.tsx"></script>
+  </body>
+</html>
