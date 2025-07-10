@@ -1,4 +1,3 @@
-// tests/broadcast-sync.spec.ts
 import { test, expect } from "@playwright/test";
 
 test("🔁 BroadcastSync cross-tab: fromRemote=true on other tab", async ({

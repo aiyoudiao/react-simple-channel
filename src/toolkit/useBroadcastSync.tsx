@@ -51,7 +51,6 @@ export function useBroadcastSync<T>(
   // 创建 postMessage 函数（加防抖/节流）
   const postMessage = useMemo(() => {
     const rawPost = (value: T) => {
-      console.log('调用了')
       onChangeRef.current?.(value, false); // 本地触发
       channelRef.current?.postMessage(value);
     };
